@@ -46,7 +46,7 @@ fashion-house-website
 - Twiniz
 
 ## Live Website
-GitHub Pages Link: (Add your website link here after enabling GitHub Pages)
+GitHub Pages Link: https://github.com/debbiecybersec/fashion-house-website
 
 ## Author
 Developed by the CSC106 Fashion House Website Group.
