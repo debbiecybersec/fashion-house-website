@@ -45,6 +45,7 @@ fashion-house-website
 - Eazy247
 - Twiniz
 - murkistired
+- princely000
 
 ## Live Website
 GitHub Pages Link: https://github.com/debbiecybersec/fashion-house-website
