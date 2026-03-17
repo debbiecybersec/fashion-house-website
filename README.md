@@ -44,6 +44,7 @@ fashion-house-website
 - Ireoluwa13
 - Eazy247
 - Twiniz
+- murkistired
 
 ## Live Website
 GitHub Pages Link: https://github.com/debbiecybersec/fashion-house-website
