@@ -1,0 +1,221 @@
+// products.js
+const productsData = {
+    "products": [
+        {
+            "id": "1",
+            "name": "Tropical Bloom Short Sleeve Shirt",
+            "price": "$50.00",
+            "ratings": 3.5,
+            "imageUrl": "../images/product-1.jpg",
+            "category": "featured",
+            "popularity": 120,
+            "onSale": false,
+            "sizes": ["6", "7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Add a splash of color and fun to your wardrobe with the Tropical Bloom Short Sleeve Shirt. Featuring a bold and vibrant mix of abstract floral and botanical prints in a patchwork of blues, yellows, reds, and greens, this shirt is perfect for beach days, summer parties, or just standing out in a crowd. Made from lightweight, breathable fabric with a relaxed fit and button-up front, it offers all-day comfort with effortless style. Pair it with shorts or chinos for a laid-back, tropical vibe."
+        },
+        {
+            "id": "2",
+            "name": "Palm Breeze Floral Shirt",
+            "price": "$65.00",
+            "ratings": 4.0,
+            "imageUrl": "../images/product-2.jpg",
+            "category": "latest",
+            "popularity": 200,
+            "onSale": true,
+            "sizes": ["6", "7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "The Palm Breeze Floral Shirt brings a fresh, tropical energy to your wardrobe. Featuring a light beige background adorned with bold green palm leaves and soft white florals, this short-sleeve button-up is made from lightweight, breathable fabric—perfect for beach days, vacations, or sunny city strolls. The relaxed fit and single chest pocket give it a laid-back charm, while the botanical print adds just the right amount of island flair to any outfit."
+        },
+        {
+            "id": "3",
+            "name": "Vintage Rose Garden Shirt",
+            "price": "$80.00",
+            "ratings": 4.5,
+            "imageUrl": "../images/product-3.jpg",
+            "category": "featured",
+            "popularity": 150,
+            "onSale": false,
+            "sizes": ["7", "8", "9", "10", "11"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Channel timeless elegance with the Vintage Rose Garden Shirt. Featuring a delicate floral pattern in warm, earthy tones of red, pink, and green on a cream background, this shirt blends classic charm with modern comfort. Crafted from soft, breathable fabric with a relaxed short-sleeve cut, it's perfect for casual outings, garden parties, or a touch of sophistication on sunny days. Pair it with linen pants or denim for a refined, laid-back look."
+        },
+        {
+            "id": "4",
+            "name": "Sakura Drift Button-Up Shirt",
+            "price": "$45.00",
+            "ratings": 3.0,
+            "imageUrl": "../images/product-4.jpg",
+            "category": "latest",
+            "popularity": 80,
+            "onSale": true,
+            "sizes": ["6", "7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Embrace subtle elegance with the Sakura Drift Button-Up, a lightweight short-sleeve shirt featuring a delicate pink cherry blossom print on a clean white backdrop. Inspired by the calm beauty of falling sakura petals, this shirt blends minimalism with charm. Made from a soft, breathable fabric, it’s ideal for spring strolls, casual outings, or a refined beachside look. The relaxed fit and classic collar offer everyday comfort with an effortlessly polished vibe."
+        },
+        {
+            "id": "5",
+            "name": "Coastal Classic Striped Shorts",
+            "price": "$50.00",
+            "ratings": 3.5,
+            "imageUrl": "../images/product-5.jpg",
+            "category": "latest",
+            "popularity": 90,
+            "onSale": false,
+            "sizes": ["6", "7", "8", "9"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Keep your summer style refined with the Coastal Classic Striped Shorts. These tailored shorts feature a subtle vertical pinstripe pattern on a light gray base, paired with a woven beige belt for a polished, ready-to-go look. Crafted from breathable, lightweight fabric, they’re ideal for warm-weather outings—from seaside strolls to casual gatherings."
+        },
+        {
+            "id": "6",
+            "name": "Golden Ridge Utility Jacket",
+            "price": "$21.00",
+            "ratings": 4.5,
+            "imageUrl": "../images/product-6.jpg",
+            "category": "latest",
+            "popularity": 130,
+            "onSale": true,
+            "sizes": ["6", "7", "8", "9", "10", "11"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "The Golden Ridge Utility Jacket brings together rugged charm and everyday practicality. Crafted in a rich mustard yellow tone, this lightweight yet durable jacket features classic button-front styling and dual chest flap pockets for a utilitarian look. Perfect for layering during transitional weather, it offers both structure and comfort, making it an ideal piece for casual outings, weekend adventures, or even a smart-casual ensemble."
+        },
+        {
+            "id": "7",
+            "name": "Classic Black Short Sleeve Shirt",
+            "price": "$9.00",
+            "ratings": 4.0,
+            "imageUrl": "../images/product-7.jpg",
+            "category": "latest",
+            "popularity": 300,
+            "onSale": true,
+            "sizes": ["6", "8", "10", "11", "12"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "A timeless wardrobe essential, this black short sleeve button-up shirt features a clean, minimal design perfect for casual or semi-formal wear. Made from breathable fabric for all-day comfort, it's a versatile piece that pairs well with jeans or chinos."
+        },
+        {
+            "id": "8",
+            "name": "Light Blue Casual Long Sleeve Shirt",
+            "price": "$15.00",
+            "ratings": 3.0,
+            "imageUrl": "../images/product-8.jpg",
+            "category": "latest",
+            "popularity": 60,
+            "onSale": false,
+            "sizes": ["7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "This light blue long sleeve shirt combines comfort with classic style. Featuring a button-up front and a chest pocket, it's ideal for both work and weekend wear. Made from soft, breathable fabric for effortless all-day comfort."
+        },
+        {
+            "id": "9",
+            "name": "Mid-night Black Analog Watch",
+            "price": "$21.00",
+            "ratings": 3.0,
+            "imageUrl": "../images/product-9.jpg",
+            "category": "latest",
+            "popularity": 70,
+            "onSale": true,
+            "sizes": ["6", "7", "8", "9"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "A bold and minimal timepiece, this black analog watch features a sleek dial with modern yellow accents. Designed for versatility and everyday wear."
+        },
+        {
+            "id": "10",
+            "name": "BlazeStride Vortex Sneakers",
+            "price": "$99.00",
+            "ratings": 5.0,
+            "imageUrl": "../images/product-10.jpg",
+            "category": "featured",
+            "popularity": 500,
+            "onSale": false,
+            "sizes": ["8", "9", "10", "11", "12"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Step into bold energy with the BlazeStride Vortex sneakers. Designed with a sleek black mesh upper for breathability and lightweight support, these shoes feature an eye-catching sole with fiery red-orange accents that give the appearance of motion even at rest. The sculpted midsole provides enhanced cushioning and responsiveness, making them ideal for both athletic performance and everyday streetwear. Complete with a pull-tab heel and slip-resistant outsole, these kicks are built for style, speed, and comfort."
+        },
+        {
+            "id": "11",
+            "name": "Slip-On Canvas Sneakers",
+            "price": "$29.00",
+            "ratings": 3.8,
+            "imageUrl": "../images/product-11.jpg",
+            "category": "featured",
+            "popularity": 110,
+            "onSale": true,
+            "sizes": ["6", "7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Effortless style and comfort, these lightweight slip-on sneakers are perfect for everyday use. The breathable canvas build and stretch band ensure a secure, easy fit."
+        },
+        {
+            "id": "12",
+            "name": "Navy Athletic Joggers",
+            "price": "$40.00",
+            "ratings": 4.2,
+            "imageUrl": "../images/product-12.jpg",
+            "category": "latest",
+            "popularity": 170,
+            "onSale": false,
+            "sizes": ["7", "8", "9", "10"],
+            "thumbnailImages": [
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100",
+                "https://via.placeholder.com/100"
+            ],
+            "description": "Comfort meets performance with these slim-fit navy joggers. Ideal for workouts or casual wear, they feature a tapered design and an elastic waistband for a snug fit."
+        }
+    ]
+};

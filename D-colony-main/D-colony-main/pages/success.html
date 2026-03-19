@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Order Success - D colony</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/190/190411.png" type="image/png">
+    <link rel="stylesheet" href="../styles/addstyle.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.success-container {
+    background: #fff;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.success-container:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.success-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #088178;
+    filter: drop-shadow(0 4px 8px rgba(0, 204, 102, 0.3));
+}
+
+h1 {
+    color: #088178;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.order-details {
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    text-align: left;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.order-details p {
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+
+.order-details strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.continue-button {
+    margin-top: 2.5rem;
+}
+
+.btn {
+    background: linear-gradient(45deg, #007bff,#088178);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .success-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+} 
+</style>
+<body>
+    <div class="success-container">
+        <div class="success-icon">
+            <!-- Checkmark SVG -->
+            <svg viewBox="0 0 52 52">
+                <path d="M26,0C11.664,0,0,11.664,0,26s11.664,26,26,26s26-11.664,26-26S40.336,0,26,0z M21.146,39.188
+                    l-13.5-13.5l3.707-3.707l9.793,9.793l19.207-19.207l3.707,3.707L21.146,39.188z"/>
+            </svg>
+        </div>
+
+        <h1>Order Successfully Placed!</h1>
+        <p id="items-ordered"></p>
+      
+
+        <p>A confirmation email is on its way. Happy shopping!</p>
+
+        <div class="continue-button">
+            <a href="products.html" class="btn">Continue Shopping</a>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee" id="eventMarquee"></div>
+    </div>
+    <script>
+        let raw_cartItems=localStorage.getItem('cart')
+        let cartItems=JSON.parse(raw_cartItems)
+        console.log(cartItems)
+        let paragraph = document.getElementById('items-ordered')
+        let ordered_text=""
+        for (let index = 0; index < cartItems.length; index++) {
+            const item = cartItems[index];
+            console.log(item)
+            if (index !== cartItems.length -1 ){
+                ordered_text+=`${item.quantity} size ${item.size} ${item.name},`
+
+            }else{
+                ordered_text+=`${item.quantity} size ${item.size} ${item.name}.`
+
+            }
+
+        }       
+        paragraph.innerHTML ="Thank you for your purchase! you ordered " + ordered_text + "\n Your order has been confirmed, and you're all set!"
+    </script>
+
+    <script src="../scripts/marquee.js"></script>
+
+</body>
+</html>

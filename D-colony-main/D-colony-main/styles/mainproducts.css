@@ -1,0 +1,132 @@
+ /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-p1 {
+    padding: 2% 5%;
+}
+
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pro {
+    width: 100%;
+    min-width: 250px;
+    padding: 2%;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 1.5% 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pro .des {
+    text-align: start;
+    padding: 2% 0;
+}
+
+.pro .des span {
+    color: #606063;
+    font-size: 0.9rem;
+}
+
+.pro .des h5 {
+    padding-top: 0.5rem;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+}
+
+.pro .des .star {
+    font-size: 0.9rem;
+    color: rgb(243, 181, 25);
+}
+
+.pro .des h4 {
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #088178;
+}
+
+.pro .cart {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.row-2 h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.row-2 select {
+    padding: 0.5rem;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .pro {
+        width: 48%; /* Two columns on tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .pro {
+        width: 23%; /* Four columns on desktop */
+    }
+    .section-p1 {
+        padding: 2% 5%;
+    }
+    .row-2 h2 {
+        font-size: 2rem;
+    }
+    .pro .des h5 {
+        font-size: 1.2rem;
+    }
+    .pro .des h4 {
+        font-size: 1.3rem;
+    }
+}

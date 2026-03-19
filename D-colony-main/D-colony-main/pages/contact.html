@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D | Colony - Contact us</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/addstyle.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+    <!--------------------------------Navbar--------------------------------------->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-container">
+                <div class="logo-circle">D</div>
+                <span class="logo-text">Colony</span>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#" data-page="index.html">Home</a></li>
+                    <li><a href="#" data-page="pages/products.html">Products</a></li>
+                    <li><a href="#" data-page="pages/about.html">About</a></li>
+                    <li><a href="#" data-page="pages/contact.html">Contact</a></li>
+                    <li><a href="#" data-page="pages/events.html">Events</a></li>
+                    <li><a href="#" data-page="pages/blogs.html">Blogs</a></li>
+                    <li><a href="#" data-page="pages/inquiry.html">Inquiry</a></li>
+                </ul>
+
+            </nav>
+            <a href="#" data-page="pages/cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+
+            <img src="../images/menu.png" class="menu-icon" onClick="menutoggle()">
+        </div>
+
+    </div>
+
+    <section id="page-header" class="about-header">
+        <h2>#D Colony</h2>
+        <p>Timeless Elegance, Redefined</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2 style='color: #000'>Connect With Our Artisans</h2>
+            <p style='color: #000'>Inquire about our exclusive collections or visit our atelier in Lagos.</p>
+            <ul>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p style='color: #000'>Lagos, Nigeria</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <p style='color: #000'>contact@chicvogue.com</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <p style='color: #000'>+234 123 456 7890</p>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <p style='color: #000'>Monday to Saturday: 10:00 AM to 18:00 PM</p>
+                </li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.724092157283!2d3.344944314769936!3d6.429675295344589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae682f951%3A0x2b8f3f8a3b0f8c7e!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2s!4v1676498542792!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form-details" class="section-p1">
+        <form id="contactForm">
+            <span>LEAVE A MESSAGE</span>
+            <h2>Share Your Vision</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="normal">Submit</button>
+            <div id="formMessage" class="message"></div>
+        </form>
+        <div class="people">
+            <div>
+                <img src="../images/Aize.jpeg"
+                    alt="img">
+                <p><span>Aizenosa okundaye</span> Secretary<br>Phone: +234 123 456 7890<br>Email: aize@gmail.com
+                </p>
+            </div>
+            <div>
+                <img src="../images/osaze.jpeg"
+                    alt="img">
+                <p><span>Osazenovban okundaye</span> Vice Chair<br>Phone: +234 123 456 7890<br>Email: osaze@gmail.com</p>
+            </div>
+            <div>
+                <img src="../images/oma.jpeg"
+                    alt="img">
+                <p><span>Sule Omachi</span> Trustee<br>Phone: +234 123 456 7890<br>Email: oma@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo-container" style="justify-content: center; margin-bottom: 15px;">
+                        <div class="logo-circle">D</div>
+                        <span class="logo-text" style="color: #fff; font-weight: 600; font-size: 24px;">Colony</span>
+                    </div>
+                    <p class="footer-p">Elevating your wardrobe with timeless style and bold confidence.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 - DColony Fashion</p>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee" id="eventMarquee"></div>
+    </div>
+
+    <script src="../scripts/marquee.js"></script>
+    <script src='../scripts/contact.js'></script>
+    <script src="../scripts/links.js"> </script>
+
+    <!-- this is my fist contact page -->
+</body>
+
+</html>

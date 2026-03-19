@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D | Colony</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/addstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+
+    </head>
+    <body>
+        <div class ="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-container">
+                        <div class="logo-circle">D</div>
+                        <span class="logo-text">Colony</span>
+                    </div>
+                    <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#" data-page="index.html">Home</a></li>
+                        <li><a href="pages/products.html" data-page="pages/products.html">Products</a></li>
+                        <li><a href="#" data-page="pages/about.html">About</a></li>
+                        <li><a href="#" data-page="pages/contact.html">Contact</a></li>
+                        <li><a href="#" data-page="pages/events.html">Events</a></li>
+                        <li><a href="#" data-page="pages/blogs.html">Blogs</a></li>
+                        <li><a href="#" data-page="pages/inquiry.html">Inquiry</a></li>
+
+                    </ul>
+                    </nav>
+                    <a href="#" data-page="pages/cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+
+                    <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
+                </div>
+                <div class="row index">
+                    <div class="col-2">
+                        <h1>Step Into Style<br>With DColony Fashion</h1>
+                        <p>Discover the latest trends, timeless essentials, and bold pieces<br>designed to elevate your wardrobe and confidence.</p>
+                        <a href="products.html" class="btn">Explore Now &#8594;</a>
+                    </div>
+                    <div class="col-2 ">
+                        <div class="headerImgCont">
+                            <img src="images/fashionHead.png" class="headerImg">
+                            <img src="images/headerImg2.png" class="headerImg china">
+                        </div>
+       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!------------------------------ featured categories------------------------------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/show1.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/show2.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/show3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!------------------------------ featured Products------------------------------>
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row" id="featured-products-row"></div>
+
+            <h2 class="title">Latest Products</h2>
+            <div class="row" id="latest-products-row-1"></div>
+            <div class="row" id="latest-products-row-2"></div>
+        </div>
+        
+        <!------------------------------ Board of Trustees ------------------------------>
+        <div class="trustees">
+            <div class="small-container">
+                <h2 class="title">Our Board of Trustees</h2>
+                <div class="row" id="trustees-container">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------- offer   --------------------------------->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/fashion_man.png" class="offer-img guy">
+                        
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on RedStore</p>
+                        <h1>Step Into Style<br>With DColony Fashion</h1>
+                        <p>Discover the latest trends, timeless essentials, and bold pieces<br>designed to elevate your wardrobe and confidence.</p>
+                        <a href="products.html" class="btn">Explore Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!------------------------------Testimonial---------------------------------->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>I’m always skeptical about online fashion stores, but this one exceeded my expectations. Great customer service and premium fabric—people keep asking where I shop! </p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="images/user-1.png">
+                        <h3>Sean Parkar</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>From the packaging to the final look, everything was on point. I wore the dress I got for an event and got so many compliments. Highly recommend!.</p>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="images/user-2.png">
+                        <h3>Mike Smith</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left" ></i>
+                        <p>Absolutely love the quality of the pieces I ordered! The fit was perfect, and the delivery was faster than expected. This is now my go-to store for unique styles that actually last. </p>
+                        <div class="rating"> 
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <img src="images/user-3.png">
+                        <h3>Mabel Joe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!----------------------------------footer------------------------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <div class="logo-container" style="justify-content: center; margin-bottom: 15px;">
+                            <div class="logo-circle">D</div>
+                            <span class="logo-text" style="color: #fff; font-weight: 600; font-size: 24px;">Colony</span>
+                        </div>
+                        <p>Elevating your wardrobe with timeless style and bold confidence.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2025 - DColony Fashion</p>
+            </div>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee" id="eventMarquee"></div>
+        </div>
+
+        <script src="scripts/marquee.js"></script>
+
+        
+        
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+
+        <script src="scripts/render.js" defer></script>
+        <script src="scripts/links.js" defer></script>
+
+
+    </body>
+</html>

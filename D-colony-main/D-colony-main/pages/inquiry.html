@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D | Colony - Inquiry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles/marquee.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/inquiry.css">
+</head>
+<body>
+    <!--------------------------------Navbar--------------------------------------->
+    <div class="container">
+         <div class="navbar">
+            <div class="logo-container">
+                <div class="logo-circle">D</div>
+                <span class="logo-text">Colony</span>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#" data-page="index.html">Home</a></li>
+                    <li><a href="#" data-page="pages/products.html">Products</a></li>
+                    <li><a href="#" data-page="pages/about.html">About</a></li>
+                    <li><a href="#" data-page="pages/contact.html">Contact</a></li>
+                    <li><a href="#" data-page="pages/events.html">Events</a></li>
+                    <li><a href="#" data-page="pages/blogs.html">Blogs</a></li>
+                    <li><a href="#" data-page="pages/inquiry.html">Inquiry</a></li>
+
+                </ul>
+
+            </nav>
+            <a href="#" data-page="pages/cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+
+            <img src="../images/menu.png" class="menu-icon" onClick="menutoggle()" >
+        </div>
+
+    </div>
+    <section id="page-header">
+        <h2 style="color: white;">Make an Inquiry</h2>
+        <p style="color: white;">Connect with us to explore our exclusive collections</p>
+    </section>
+
+    <section id="inquiry-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Reach out to our fashion experts</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Lagos, Nigeria</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <p>inquiry@chicvogue.com</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <p>+234 123 456 7890</p>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <p>Monday to Friday: 10:00 AM to 6:00 PM</p>
+                </li>
+            </ul>
+        </div>
+        <div class="image"></div>
+    </section>
+
+    <section id="form-details">
+        <form id="inquiryForm">
+            <span>SEND US A MESSAGE</span>
+            <h2>We'd love to hear from you</h2>
+            <div class="form-group">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="form-group">
+                <select id="inquiryType" required>
+                    <option value="" disabled selected></option>
+                    <option value="collections">Collections</option>
+                    <option value="custom">Custom Orders</option>
+                    <option value="appointments">Appointments</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="inquiryType">Inquiry Type</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" cols="30" rows="8" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="normal">Submit Inquiry</button>
+            <div id="formMessage" class="message"></div>
+        </form>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4 style="color: white;">Join Our Fashion Circle</h4>
+            <p>Stay updated with our latest collections and <span>exclusive offers</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address" required>
+            <button class="normal">Subscribe</button>
+        </div>
+    </section>
+
+     <!----------------------------------footer------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo-container" style="justify-content: center; margin-bottom: 15px;">
+                        <div class="logo-circle">D</div>
+                        <span class="logo-text" style="color: #fff; font-weight: 600; font-size: 24px;">Colony</span>
+                    </div>
+                    <p>Elevating your wardrobe with timeless style and bold confidence.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 - DColony Fashion</p>
+        </div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee" id="eventMarquee"></div>
+    </div>
+
+    <script src="../scripts/inquiry.js"></script>
+    <script src="../scripts/marquee.js"></script>
+    <script src="../scripts/links.js"> </script>
+   
+</body>
+</html>

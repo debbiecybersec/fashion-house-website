@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D | Colony - Products</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/addstyle.css">
+    <link rel="stylesheet" href="../styles/mainproducts.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-container">
+                <div class="logo-circle">D</div>
+                <span class="logo-text">Colony</span>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#" data-page="index.html">Home</a></li>
+                    <li><a href="#" data-page="pages/products.html">Products</a></li>
+                    <li><a href="#" data-page="pages/about.html">About</a></li>
+                    <li><a href="#" data-page="pages/contact.html">Contact</a></li>
+                    <li><a href="#" data-page="pages/events.html">Events</a></li>
+                    <li><a href="#" data-page="pages/blogs.html">Blogs</a></li>
+                    <li><a href="#" data-page="pages/inquiry.html">Inquiry</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#" data-page="pages/cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+
+            <img src="../images/menu.png" class="menu-icon" onClick="menutoggle()">
+        </div>
+    </div>
+
+    <!------------------------------ Products------------------------------>
+
+    <section id="product1" class="section-p1">
+        <div class="row-2">
+            <h2>All Products</h2>
+            <select id="sortSelect" onchange="sortProducts()">
+                <option value="default">Default sorting</option>
+                <option value="price">Sort by price</option>
+                <option value="popularity">Sort by popularity</option>
+                <option value="rating">Sort by rating</option>
+                <option value="sale">Sort by sale</option>
+            </select>
+        </div>
+        <div class="pro-container" id="productContainer">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo-container" style="justify-content: center; margin-bottom: 15px;">
+                        <div class="logo-circle">D</div>
+                        <span class="logo-text" style="color: #fff; font-weight: 600; font-size: 24px;">Colony</span>
+                    </div>
+                    <p>Elevating your wardrobe with timeless style and bold confidence.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 - DColony Fashion</p>
+        </div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee" id="eventMarquee"></div>
+    </div>
+
+    <script src="../scripts/marquee.js"></script>
+
+    <script src="../scripts/mainproducts.js"></script>
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/products-details.js"></script>
+    <script src="../scripts/links.js"> </script>
+</body>
+
+</html>
