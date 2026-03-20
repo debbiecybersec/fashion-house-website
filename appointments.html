@@ -1,36 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Appointments</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Veloura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<marquee>🔥 Book an appointment with our designers!</marquee>
+    <marquee>🔥 Book an appointment with our designers!</marquee>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="trustees.html">Board of Trustees</a>
-<a href="appointments.html">Appointments</a>
-<a href="events.html">Events</a>
-</nav>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <div class="logo-circle">G</div>
+            <span class="logo-text">lam</span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trustees.html">Trustees</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<h2>Book Appointment</h2>
+    <!-- Banner -->
+    <div class="header">
+        <div class="container">
+            <div class="banner banner-appointments row">
+                <div class="col-2">
+                    <h1>Book Your Appointment</h1>
+                    <p>Schedule a personal consultation with our expert designers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<form>
-Name:<br>
-<input type="text"><br><br>
+    <!-- Content -->
+    <div class="small-container fade-in page-content">
+        <h2 class="title">Schedule Your Visit</h2>
+        <form class="appointment-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="date" class="form-label">Preferred Date:</label>
+                <input type="date" id="date" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="service" class="form-label">Service:</label>
+                <select id="service" class="form-select" required>
+                    <option value="">Select a service</option>
+                    <option value="consultation">Design Consultation</option>
+                    <option value="fitting">Personal Fitting</option>
+                    <option value="alteration">Alteration Service</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </div>
 
-Email:<br>
-<input type="email"><br><br>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Veloura</h3>
+            <p>Luxury fashion house crafting timeless elegance since 2020.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">📘 Facebook</a>
+                <a href="#" class="social-link">📷 Instagram</a>
+                <a href="#">🐦 Twitter</a>
+            </div>
+        </div>
 
-Date:<br>
-<input type="date"><br><br>
+        <div class="footer-group">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a><br>
+            <a href="about.html">About</a><br>
+            <a href="trustees.html">Trustees</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="appointments.html">Appointments</a><br>
+            <a href="contact.html">Contact</a><br>
+            <a href="events.html">Events</a>
+        </div>
 
-<input type="submit" value="Book">
-</form>
+        <div>
+            <h4>Newsletter</h4>
+            <p>Stay in the loop — exclusive drops & events.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" id="newsletter-email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-group">
+            <h4>Contact Info</h4>
+            <p>📍 123 Fashion Ave, Luxury City</p>
+            <p>📞 +1 (555) 123-4567</p>
+            <p>✉️ info@veloura.com</p>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Veloura. All rights reserved.</span>
+            <a href="#top" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <button id="topBtn" onclick="topFunction()">↑</button>
+    <script src="script.js"></script>
 
 </body>
 </html>

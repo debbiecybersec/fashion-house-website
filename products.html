@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Products</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Veloura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<marquee>🔥 Check out our latest fashion collection!</marquee>
+    <marquee>🔥 Check out our latest fashion collection!</marquee>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="trustees.html">Board of Trustees</a>
-<a href="appointments.html">Appointments</a>
-<a href="events.html">Events</a>
-</nav>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <div class="logo-circle">G</div>
+            <span class="logo-text">lam</span>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trustees.html">Trustees</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<h2>Our Products</h2>
+    <!-- Banner -->
+    <div class="header">
+        <div class="container">
+            <div class="banner banner-products row">
+                <div class="col-2">
+                    <h1>Our Collections</h1>
+                    <p>Discover timeless pieces crafted for the discerning fashion enthusiast.</p>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<p>Luxury Dresses</p>
-<p>Classic Men's Suits</p>
-<p>Designer Shoes</p>
+    <!-- Content -->
+    <div class="small-container fade-in page-content">
+        <h2 class="title">Product Categories</h2>
+        <div class="row event-grid">
+            <div class="card event-card">
+                <h3>Luxury Dresses</h3>
+                <p>Elegant evening gowns and cocktail dresses for every occasion.</p>
+                <a href="shop.html" class="btn event-btn">View Collection</a>
+            </div>
+            <div class="card event-card">
+                <h3>Men's Suits</h3>
+                <p>Classic tailored suits and formal wear for the modern gentleman.</p>
+                <a href="shop.html" class="btn event-btn">View Collection</a>
+            </div>
+            <div class="card event-card">
+                <h3>Designer Shoes</h3>
+                <p>Handcrafted footwear that combines comfort with sophistication.</p>
+                <a href="shop.html" class="btn event-btn">View Collection</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Veloura</h3>
+            <p>Luxury fashion house crafting timeless elegance since 2020.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">📘 Facebook</a>
+                <a href="#" class="social-link">📷 Instagram</a>
+                <a href="#">🐦 Twitter</a>
+            </div>
+        </div>
+
+        <div class="footer-group">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a><br>
+            <a href="about.html">About</a><br>
+            <a href="trustees.html">Trustees</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="appointments.html">Appointments</a><br>
+            <a href="contact.html">Contact</a><br>
+            <a href="events.html">Events</a>
+        </div>
+
+        <div>
+            <h4>Newsletter</h4>
+            <p>Stay in the loop — exclusive drops & events.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" id="newsletter-email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-group">
+            <h4>Contact Info</h4>
+            <p>📍 123 Fashion Ave, Luxury City</p>
+            <p>📞 +1 (555) 123-4567</p>
+            <p>✉️ info@veloura.com</p>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Veloura. All rights reserved.</span>
+            <a href="#top" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <button id="topBtn" onclick="topFunction()">↑</button>
+    <script src="script.js"></script>
 
 </body>
 </html>
