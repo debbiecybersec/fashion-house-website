@@ -578,10 +578,28 @@ footer .footer-bottom{
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 .event-btn {
     margin-top: 15px;
+}
+.newstext h4{
+     color: #D4AF37;
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.newstext p{
+    color: #94b0e9;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Trustee Cards */
