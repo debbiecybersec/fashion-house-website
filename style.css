@@ -428,12 +428,12 @@ footer .footer-bottom{
 
 .footer-inner{
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr; /* brand + 3 utility columns */
-    gap: 18px;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr; /* brand + 3 utility columns */
+    gap: 30px;
     align-items: start;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .footer-inner > div {

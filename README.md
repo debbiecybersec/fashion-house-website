@@ -31,12 +31,37 @@ The website was created using basic web technologies such as HTML, CSS, and Java
 ## Project Structure
 fashion-house-website
 - index.html
-- products.html
+- shop.html
 - trustees.html
 - appointments.html
 - events.html
 - style.css
 - script.js
+
+## Requirements Checklist
+- [x] Consistent navigation links on all pages (Home, Trustees, Shop, Appointments, Events)
+- [x] Board of Trustees page with member photos and roles
+- [x] Appointments page with booking form and contact details
+- [x] Events page with upcoming events list
+- [x] Marquee on every page (static + JS-enhanced dynamic marquee)
+- [x] JavaScript features (scroll to top, newsletter, fade-in, dynamic marquee, forms)
+- [x] External CSS usage (style.css)
+- [x] DOM structure implemented in HTML sections and cards
+
+## DOM Structure (high level)
+- html
+  - head
+  - body
+    - marquee (top announcement)
+    - navbar
+      - logo-container
+      - nav > ul.navigation > li > a
+    - header/banner section
+    - content sections (categories/products/trustee grid/appointment form/events grid)
+    - footer
+      - footer-inner + footer-bottom
+    - button#topBtn
+    - script.js
 
 ## Group Members
 - debbiecybersec – Creative Director
